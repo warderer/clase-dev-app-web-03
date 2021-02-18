@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Formulario</title>
+</head>
+<body>
+    <form action="https://formspree.io/f/" method="post">
+<!-- Comentarios -->
+        <label for="date">Escriba su date</label><br>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="nombre">*Escriba su nombre</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellidos">Escriba sus apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos"><br>
+
+        <label for="password">Escriba su password</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="sexo">Escriba su sexo: </label><br>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+
+        <label for="mujer">Mujer</label><br><br>
+
+        <label for="color">Escoge un color</label>
+        <input type="color" id="color">
+        <button>Enviar</button>
+
+    </form>
+</body>
+</html>
+
