@@ -1,5 +1,6 @@
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
 }
 
 .diseno{
@@ -19,7 +20,7 @@ h2{
     margin: 2px;
 }
 
-article{
+article {
     background: darkturquoise;
     padding: 5px;
     margin: 20px;
@@ -45,6 +46,12 @@ img{
     width: 130px;
 }
 
+.productos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 footer{
     width: 80%;
     margin: 20px auto;
@@ -53,4 +60,48 @@ footer{
 }
 p{
     text-align: center;
+}
+
+.titulo-rojo h3 {
+    color:red;
+}
+
+.titulo-azul h3 {
+    color: blue;
+}
+
+#main-menu ul {
+    padding:0;
+    display:flex;
+    justify-content: center;
+}
+
+#main-menu li{
+    display:inline;
+}
+
+#main-menu li a { 
+    font-family: Arial; 
+    font-size: 16px; 
+    text-decoration: none; 
+    float: left; 
+    padding: 10px; 
+    background-color: #2175bc; 
+    color: #fff; 
+} 
+
+#main-menu li a:hover { 
+    background-color: #2586d7; 
+    margin-top: -2; 
+    padding-bottom: 12px; 
+}
+
+nav {
+    background-color: #2175bc;
+    width: 100%;
+    height: 50px;
+}
+
+ul {
+    margin:0;
 }
