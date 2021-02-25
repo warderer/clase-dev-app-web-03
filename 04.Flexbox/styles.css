@@ -1,0 +1,56 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.diseno{
+    width: 80%;
+    margin: 25px auto;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: -webkit-xxx-large;
+}
+
+h2{
+    padding: 2% red;
+    width: 40%;
+    margin: 2px;
+}
+
+article{
+    background: darkturquoise;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 25%; 
+    text-align: center; 
+}
+
+h3{
+    padding: 8px; 
+    margin: 10px;
+}
+
+sec{
+    width: 80%;
+    margin: 2px auto;
+}
+
+img{
+    background: paleturquoise;
+    padding: 10px;
+    border-radius: 5%;
+    width: 130px;
+}
+
+footer{
+    width: 80%;
+    margin: 20px auto;
+    padding: 2%;
+    letter-spacing: 2px;
+}
+p{
+    text-align: center;
+}

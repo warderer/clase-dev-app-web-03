@@ -1,0 +1,41 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+article{
+    background: darkturquoise;
+    border-radius: 10px;
+    width: 70%; 
+    text-align: center; 
+    margin: 20px auto;
+}
+
+h2{
+    padding: 20px;
+}
+
+p{
+    background: paleturquoise;
+    text-align: left;
+    padding: 30px;
+}
+
+ul{
+    background: paleturquoise;
+    text-align: left;
+    padding: 30px;
+    margin: 0px;
+}
+
+img{
+    background: paleturquoise;
+    padding: 10px;
+    border-radius: 10%;
+    width: 130px;
+}
+
+a{
+    margin: 180px;
+    padding: 50px;
+}
