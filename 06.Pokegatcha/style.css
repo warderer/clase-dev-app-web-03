@@ -1,0 +1,35 @@
+body {
+    background: url("img/who-is-this-pokemon-bg.png") no-repeat fixed left center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom:60px;
+}
+
+main {
+    display:fixed;
+    margin-top:250px;
+    margin-left:100px;
+}
+
+.container {
+    width: 600px;
+    display:flex;
+    justify-content: center;
+}
+
+#btn-otroPokemon{
+    margin-top:100px;
+    background:#FFCB05;
+    padding:30px;
+    border: 5px #3664AD solid;
+    border-radius: 4px;
+    font-size:20px;
+    font-color:#3664AD;
+}
+
+img {
+    transform: scale(2);
+}
