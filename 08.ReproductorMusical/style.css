@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #1C2833;
+    display: grid;
+    place-items: center;
+}
+.main{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border-radius: 18px;
+    background: #566573;
+    overflow: hidden;
+}
+.main .top_bar .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-70px);
+    transition: 0.5s;
+}
+.main .top_bar .active2 {
+    transform: translateY(0px);
+}
+.main .top_bar .options button{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+}
+.main .top_bar{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .top_bar button{
+    z-index: 20;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.08);
+    box-shadow: 0.1px 8px 8px 2px rgba(0,0,0,0.2);
+}
+.main .top_bar button:hover,.main .control_part .control_buttons .main_btns i:hover{
+    background: linear-gradient(to right, #ff5722, #ff7043);
+    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2) inset,
+                0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.main .control_part .song_tittle {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0rem;
+}
+.main .control_part .song_tittle .img_container{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0.1px 4px 8px 2px rgba(0, 0, 0, 1);
+}
+.main .control_part .song_tittle .img_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Control de reproduccion*/
+.main .control_part{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main .control_part .song_tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main .control_part .song_tittle #artist{
+    font-size: 14px;
+    padding: 0.5rem;
+    line-height: 3rem;
+}
+.main .control_part .song_tittle #tittle:first-child{
+    text-transform: uppercase;
+    font-size: 22px;
+    text-transform: capitalize;
+    
+}
+.main .control_part .control_buttons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.main .control_part .control_buttons .main_btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+}
+.main .control_part .control_buttons .main_btns i{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    font-size: 30px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 18px;
+    background: rgba(0,0,0,0.08);
+    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+    border-radius: 50%;
+}
+@keyframes rotatePlayer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/*Lista de canciones*/
+.playlist{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: #566573;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main .active{
+    max-height: 100vh;
+    padding: 100px 0 0 0;
+}
+.playlist .p_song{
+    position: relative;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 12px 12px 20px 12px;
+    box-shadow: 0.1px 8px 8px 2px rgba(0,0,0,0.1);
+}
+.playlist .p_song:not(:first-child){
+    margin-top: 20px;
+}
+.playlist .p_song #p_tittle{
+    font-size: 20px;
+}
+.playlist .p_song #p_artist{
+    position: absolute;
+    bottom: 6px;
+    left: 15px;
+    font-size: 11px;
+}
+.playlist .p_song i{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.08);
+    box-shadow: 0.1px 8px 8px 2px rgba(0,0,0,0.2);
+}
+.playlist .p_song:hover{
+    background: #1C2833;
+}
+.playlist .p_song:hover i{
+    background: #ff5722;
+}
+.main .active_song{
+    background: #1C2833;
+    box-shadow: none;
+}
+.playlist .active_song button{
+    background: linear-gradient(to right, #ff5722, #ff7043);
+    box-shadow: 0.1px 8px 8px 2px rgba(0, 0, 0, 0.2) inset,
+                0.1px 8px 8px 2px rgba(0, 0, 0, 0.2); 
+}
+}
+
+/*----PROGRESS STYLE----*/
+.progressbar_container{
+    width: 300%;
+    height: auto;
+    padding: 1rem 0;
+}
+.progress_div{
+width: 300px;
+height: 0.4rem;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2),
+0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),
+0 16px 32px rgba(0, 0, 0, 0.2), 0 32px 64px rgba(0, 0, 0, 0.2);
+border-radius: 4rem;
+position: relative;
+margin-top: 0.5rem;
+transition: width 1s linear;
+-moz-transition: width 1s linear;
+-o-transition: width 1s linear;
+-webkit-transition: width 1s linear;
+cursor: pointer;
+-webkit-appearance: none;
+appearance: none;
+}
+
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.5%;
+    height: 100%;
+    background-color: #ff5722;
+    border-radius: 4rem;
+    position: relative;
+    /*transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;*/
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.progress_duration_meter{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}

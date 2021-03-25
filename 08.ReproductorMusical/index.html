@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reproductor de musica</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	
+</head>
+<body>
+
+	<div class="main" >
+
+		<!-- top bar-->
+		<div class="top_bar">
+		<button onclick="open_p()"><i class='bx bx-menu' ></i></button>
+		</div>
+		<div class="control_part">
+			<div class="song_tittle">
+				<h2 id="tittle">Genius</h2>
+				<h3 id="artist">LSD</h3>
+				<div class="img_container">
+					<img src="img/Genius - LSD.jpg" alt="">
+				</div>
+				<audio src="music/Genius - LSD.mp3"></audio>
+			</div>
+
+			<!--Barra progresiva-->
+			<div class="progressbar_container" id="progress_container">
+			    <div class="progress_duration_meter">
+					<div id="current_time">0:00</div>
+					<div id="duration">0:00</div>
+			    </div>
+			    <div class="progress_div" id="progress_div">
+				    <div class="progress" id="progress"></div>
+
+			    </div>
+			</div>
+
+
+            <!--Controles-->
+
+			<div class="control_buttons">
+				<!--<div class="range_slider">
+					<input type="range" min="0" max="100" id="slider" value="0">
+				</div>-->
+				<div class="main_btns">
+					<i class='bx bx-skip-previous' id="previous" title="Previous" ></i>
+					<i class='bx bx-shuffle' id="shuffle" title="Shuffle"></i>
+					<i class='bx bx-play' id="play_btn" title="Play"></i>
+					<i class='bx bx-skip-next' id="next" title="Next"></i>
+				</div>
+			</div>
+		</div>
+
+		<!--Lista de canciones-->
+		<div class="playlist">
+			<div class="p_song" onclick="playThisSong(0)">
+				<p id="p_tittle">Gennius</p>
+				<p id="p_artist">LSD</p>
+			    <i class='bx bx-play'></i>
+			</div>
+
+			<div class="p_song" onclick="playThisSong(1)">
+				<p id="p_tittle">Memories</p>
+				<p id="p_artist">David Guetta</p>
+				<i class='bx bx-play'></i>
+			</div>
+
+			<div class="p_song" onclick="playThisSong(2)">
+				<p id="p_tittle">Alone</p>
+				<p id="p_artist">Marshmello</p>
+				<i class='bx bx-play'></i>
+			</div>
+
+			<div class="p_song" onclick="playThisSong(3)">
+				<p id="p_tittle">Sunflower</p>
+				<p id="p_artist">Sunflower - Swae Lee & Post Malon</p>
+				<i class='bx bx-play'></i>
+			</div>
+			<div class="p_song" onclick="playThisSong(4)">
+				<p id="p_tittle">Pero ya no</p>
+				<p id="p_artist">Bad Bunny</p>
+				<i class='bx bx-play'></i>
+			</div>
+			
+		</div>
+	</div>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
